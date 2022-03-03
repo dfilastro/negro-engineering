@@ -1,0 +1,65 @@
+.headerContainer {
+  height: 8rem;
+  border-bottom: 1px solid var(--grey-800);
+  //   background: black;
+  //   background: linear-gradient(rgb(0, 0, 0), rgba(53, 53, 53, 0.87));
+}
+
+.headerContent {
+  max-width: 1300px;
+  height: 8rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 10rem;
+  }
+
+  nav {
+    margin-left: 5rem;
+    height: 8rem; //this way the nav items occupate the intire height wich turns easyer to put the underline that shows the selected button
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 8rem;
+      line-height: 8rem;
+      color: var(--white);
+
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 3rem;
+      }
+
+      &:hover {
+        color: var(--red-100);
+      }
+
+      &.active {
+        color: var(--red-100);
+        font-weight: bold;
+      }
+
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: var(--red-100);
+      }
+    }
+  }
+
+  button {
+    margin-left: auto;
+  }
+}
