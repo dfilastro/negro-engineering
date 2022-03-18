@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 export function Header() {
@@ -6,10 +7,18 @@ export function Header() {
       <div className={styles.headerContent}>
         <img src='/images/logo.svg' alt='ig.news' />
         <nav>
-          <a className={styles.active}>HOME</a>
-          <a>SOBRE NOS</a>
-          <a>SERVIÇOS</a>
-          <a>PROJETOS</a>
+          <Link href={'/'}>
+            <a className={styles.active}>HOME</a>
+          </Link>
+          <Link href={'/about'}>
+            <a>SOBRE NOS</a>
+          </Link>
+          <Link href={''}>
+            <a>SERVIÇOS</a>
+          </Link>
+          <Link href={''}>
+            <a>PROJETOS</a>
+          </Link>
         </nav>
 
         {/* <ContactButton /> */}

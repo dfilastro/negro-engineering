@@ -1,0 +1,64 @@
+.container {
+  height: 100vh; //discounts the header`s 5rem, this way the conntent remains centralized
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../../../public/images/parallax-2.jpg);
+  margin-top: -8rem;
+}
+
+.hero {
+  padding-top: 16rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  height: 80vh;
+
+  color: var(--white);
+
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    padding: 1rem 2.5rem;
+    font-size: 87.5%; //14px
+
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid var(--red-100);
+    border-radius: 3px;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    transition: 0.33s all ease;
+    white-space: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--red-100);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--black);
+      border-color: var(--black);
+    }
+  }
+}
+
+.postsContainer {
+  height: 100vh;
+}
