@@ -5,12 +5,12 @@ import styles from './styles.module.scss';
 import { IoIosRocket, IoIosEye } from 'react-icons/io';
 import { GrDiamond } from 'react-icons/gr';
 
-import rocketImg from '../../../public/images/mission.png';
-
 export default function About() {
   return (
     <>
-      <Head>Negro | Sobre</Head>
+      <Head>
+        <title>Negro | Sobre Nós</title>
+      </Head>
 
       <main className={styles.container}>
         <div className={styles.hero}>

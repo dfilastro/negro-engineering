@@ -13,7 +13,7 @@ export function Header() {
           <Link href={'/about'}>
             <a>SOBRE NOS</a>
           </Link>
-          <Link href={''}>
+          <Link href={'/services'}>
             <a>SERVIÇOS</a>
           </Link>
           <Link href={''}>
