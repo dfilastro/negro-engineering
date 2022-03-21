@@ -59,6 +59,48 @@
   }
 }
 
-.postsContainer {
-  height: 100vh;
+.aboutContainer {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3rem auto 6rem auto;
+
+  .valuesContainer {
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    .contentContainer {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+
+      .valuesCard {
+        display: flex;
+
+        .valuesImg {
+          margin-right: 1rem;
+          align-items: center;
+          width: 6rem;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h3 {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
 }
