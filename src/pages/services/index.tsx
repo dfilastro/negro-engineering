@@ -27,12 +27,12 @@ export default function Services() {
               MAJORITY OF OUR PROJECTS!
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we've accumulated a strong expertise both in managing and completing any
-              type of a construction, as well as in choosing the right vendors and sub-contractors... We understand how
-              vital it is to coordinate the project in a timely, cost-efficient way. As of now we've alreeady dealt with
-              numerous mid and large scale constructions, so we've mastered the art of minimizing the extra expenses,
-              completing each project's stage on schedule and implementing a live project intact with both original
-              engineering solutions and the client's initial vision...
+              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
+              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
+              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
+              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
+              expenses, completing each projects stage on schedule and implementing a live project intact with both
+              original engineering solutions and the clients initial vision...
             </p>
           </div>
           <Image src={imageServices} alt='Project Image' />
@@ -47,12 +47,12 @@ export default function Services() {
               MAJORITY OF OUR PROJECTS!
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we've accumulated a strong expertise both in managing and completing any
-              type of a construction, as well as in choosing the right vendors and sub-contractors... We understand how
-              vital it is to coordinate the project in a timely, cost-efficient way. As of now we've alreeady dealt with
-              numerous mid and large scale constructions, so we've mastered the art of minimizing the extra expenses,
-              completing each project's stage on schedule and implementing a live project intact with both original
-              engineering solutions and the client's initial vision...
+              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
+              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
+              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
+              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
+              expenses, completing each projects stage on schedule and implementing a live project intact with both
+              original engineering solutions and the clients initial vision...
             </p>
           </div>
         </div>
@@ -65,12 +65,12 @@ export default function Services() {
               MAJORITY OF OUR PROJECTS!
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we've accumulated a strong expertise both in managing and completing any
-              type of a construction, as well as in choosing the right vendors and sub-contractors... We understand how
-              vital it is to coordinate the project in a timely, cost-efficient way. As of now we've alreeady dealt with
-              numerous mid and large scale constructions, so we've mastered the art of minimizing the extra expenses,
-              completing each project's stage on schedule and implementing a live project intact with both original
-              engineering solutions and the client's initial vision...
+              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
+              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
+              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
+              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
+              expenses, completing each projects stage on schedule and implementing a live project intact with both
+              original engineering solutions and the clients initial vision...
             </p>
           </div>
           <Image src={imageServices} alt='Building Image' />
