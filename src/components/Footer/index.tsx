@@ -7,10 +7,10 @@ export function Footer() {
       <div className={styles.footerContent}>
         <img className={styles.logoImg} src='/images/logo.svg' alt='' />
         <div className={styles.socialMediaSection}>
-          <a href='https://www.instagram.com/negromateriaiseletricos/' target='_blank'>
+          <a href='https://www.instagram.com/negromateriaiseletricos/' target='_blank' rel='noreferrer'>
             <FaInstagram size='2rem' color='var(--white)' />
           </a>
-          <a href='https://www.facebook.com/negromateriaiseletricos' target='_blank'>
+          <a href='https://www.facebook.com/negromateriaiseletricos' target='_blank' rel='noreferrer'>
             <FaFacebook size='2rem' color='var(--white)' />
           </a>
           <FaWhatsapp size='2rem' color='var(--white)' />
