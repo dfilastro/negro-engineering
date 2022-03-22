@@ -69,9 +69,9 @@ export default function Services() {
             </p>
             <p className={styles.servicesDescription}>
               Situações como multa na fatura por excesso de energia reativa ou uma viga descentralizada podem tirar o
-              sono de qualquer pessoal, na Negro você encontra profissionais altamente capacitados na resolução desses e
-              muitos outros problemas, além disso elaboramos laudos de regularização de instalações elétricas e
-              preventivas contra incêndio.
+              sono de qualquer pessoal, na Negro você encontra profissionais capacitados na resolução desses e muitos
+              outros problemas, além disso elaboramos laudos de regularização de instalações elétricas e preventivas
+              contra incêndio.
             </p>
           </div>
           <Image className={styles.servicesImages} src={imageConsulting2} alt='Building Image' />
