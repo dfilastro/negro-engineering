@@ -32,11 +32,11 @@ export default function Services() {
               engineering solutions and the client's initial vision...
             </p>
           </div>
-          <img src='/images/service-1-652x491.jpg' alt='' />
+          <img src='/images/service-1-652x491.jpg' alt='Project Image' />
         </div>
 
         <div className={styles.cardContainer2}>
-          <img src='/images/service-1-652x491.jpg' alt='' />
+          <img src='/images/service-1-652x491.jpg' alt='Instalation image' />
           <div className={styles.projectContainer}>
             <h4 className={styles.titleDecorated}>Contrato Global</h4>
             <p className={styles.servicesTitle}>
@@ -70,7 +70,7 @@ export default function Services() {
               engineering solutions and the client's initial vision...
             </p>
           </div>
-          <img src='/images/service-1-652x491.jpg' alt='' />
+          <img src='/images/service-1-652x491.jpg' alt='Building Image' />
         </div>
       </section>
     </>
