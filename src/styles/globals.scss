@@ -23,15 +23,113 @@
   --yellow-500: #eba417;
 }
 
+@media (max-width: 1700px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 93.75%;
+  }
+
+  .servicesImages {
+    width: 93.75%;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 87%;
+  }
+
+  .servicesImages {
+    width: 87%;
+  }
+}
+
+@media (max-width: 1470px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 80%;
+  }
+
+  .servicesImages {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1355px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 73%;
+  }
+
+  .servicesImages {
+    width: 73%;
+  }
+}
+
+@media (max-width: 1230px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 67%;
+  }
+
+  .servicesImages {
+    width: 67%;
+  }
+}
+
 @media (max-width: 1080px) {
   html {
-    font-size: 93.75%;
+    // font-size: 93.75%;
+    font-size: 58%;
+  }
+
+  .servicesImages {
+    width: 58%;
+  }
+}
+
+@media (max-width: 940px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 51%;
+  }
+
+  .servicesImages {
+    width: 51%;
+  }
+}
+
+@media (max-width: 860px) {
+  html {
+    // font-size: 93.75%;
+    font-size: 45%;
+  }
+
+  .servicesImages {
+    width: 45%;
   }
 }
 
 @media (max-width: 720px) {
   html {
-    font-size: 87.5%;
+    // font-size: 87.5%;
+    font-size: 39%;
+  }
+
+  .servicesImages {
+    width: 39%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    // font-size: 87.5%;
+    font-size: 23%;
+  }
+
+  .servicesImages {
+    width: 23%;
   }
 }
 

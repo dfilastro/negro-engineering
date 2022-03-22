@@ -45,7 +45,7 @@ export default function Services() {
         <div className={styles.cardContainer2}>
           <Image className={styles.servicesImages} src={imageConstruction} alt='Instalation image' />
           <div className={styles.projectContainer}>
-            <h4 className={styles.titleDecorated}>Contrato Empreitada Global</h4>
+            <h4 className={styles.titleDecorated}>Empreitada Global</h4>
             <p className={styles.servicesTitle}>
               Pra você que busca praticidade na hora de <span>reformar</span> ou <span>construir</span>, essa é a melhor
               opção, com o contrato global você sabe o quanto vai gastar antes mesmo de começar a construção

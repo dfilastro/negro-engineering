@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    height: 48rem;
+    max-height: 80vh;
 
     padding: 8rem 15rem;
     background: var(--grey-50);
@@ -51,7 +51,7 @@
     .titleDecorated {
       text-transform: uppercase;
       font-size: 1.5625rem; //25px
-      height: 4.6875rem; //75px
+      height: 75px;
       line-height: 1.72;
 
       &::before {
@@ -81,6 +81,7 @@
       font-weight: 300;
       font-size: 1.125rem;
     }
+
     span {
       font-weight: bold;
       color: var(--red-100);
@@ -91,15 +92,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    max-height: 80vh;
+
     padding: 8rem 15rem;
     gap: 5rem;
-
-    height: 48rem;
 
     .titleDecorated {
       text-transform: uppercase;
       font-size: 1.5625rem; //25px
-      height: 4.6875rem; //75px
+      height: 75px;
       line-height: 1.72;
 
       &::before {
