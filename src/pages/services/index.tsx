@@ -2,7 +2,9 @@ import Head from 'next/head';
 import styles from './styles.module.scss';
 
 import Image from 'next/image';
-import imageServices from '../../../public/images/service-1-652x491.jpg';
+import imageConsulting2 from '../../../public/images/consultoria2.jpg';
+import imageElectricalProjects from '../../../public/images/projetos-eletricos3.jpg';
+import imageConstruction from '../../../public/images/contrato-global2.jpg';
 
 export default function Services() {
   return (
@@ -13,67 +15,66 @@ export default function Services() {
 
       <main className={styles.container}>
         <div className={styles.hero}>
-          <h1>NOSSOS SERVIÇOS</h1>
-          <p>CONHEÇA UM POUCO MAIS A NOSSA HISTÓRIA</p>
+          <h1>SERVIÇOS</h1>
+          <p>
+            Nossa equipe é composta por engenheiros e construtores altamente qualificados que trabalham em sinergia
+            buscando sempre atender as expectativas do cliente.
+          </p>
         </div>
       </main>
 
       <section className={styles.servicesContainer}>
         <div className={styles.cardContainer1}>
           <div className={styles.projectContainer}>
-            <h4 className={styles.titleDecorated}>Contrato Global</h4>
+            <h4 className={styles.titleDecorated}>Projetos Elétricos</h4>
             <p className={styles.servicesTitle}>
-              WE HAVE A LONG LIST OF PROFESSIONAL CONTRACTORS, WHOM OUR ENGINEERS AND ARCHITECTS ENJOY TO WORK WITH ON A
-              MAJORITY OF OUR PROJECTS!
+              Precisando adequar sua edificação? Nossos profissionais oferecem vasta experiência, principalmente, em{' '}
+              <span>Padrão de Entrada de Energia</span> e{' '}
+              <span>Sistemas de Proteção Contra Descargas Atmosféricas (SPDA)</span>
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
-              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
-              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
-              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
-              expenses, completing each projects stage on schedule and implementing a live project intact with both
-              original engineering solutions and the clients initial vision...
+              Ao longo dos anos, desenvolvemos grande expertise no correto dimensionamento de circuitos alimentadores,
+              já desenvolvemos projetos para mais de 1.200MW instalados; entendemos que, independentemente do tramanho
+              do projeto, é vital um circuito bem dimensionado, considerando tanto o cenário atual quanto um futuro,
+              pois trás confiabilidade e, acima de tudo, segurança ao cliente.
             </p>
           </div>
-          <Image src={imageServices} alt='Project Image' />
+          <Image className={styles.servicesImages} src={imageElectricalProjects} alt='Project Image' />
         </div>
 
         <div className={styles.cardContainer2}>
-          <Image src={imageServices} alt='Instalation image' />
+          <Image className={styles.servicesImages} src={imageConstruction} alt='Instalation image' />
           <div className={styles.projectContainer}>
-            <h4 className={styles.titleDecorated}>Contrato Global</h4>
+            <h4 className={styles.titleDecorated}>Contrato Empreitada Global</h4>
             <p className={styles.servicesTitle}>
-              WE HAVE A LONG LIST OF PROFESSIONAL CONTRACTORS, WHOM OUR ENGINEERS AND ARCHITECTS ENJOY TO WORK WITH ON A
-              MAJORITY OF OUR PROJECTS!
+              Pra você que busca praticidade na hora de <span>reformar</span> ou <span>construir</span>, essa é a melhor
+              opção, com o contrato global você sabe o quanto vai gastar antes mesmo de começar a construção
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
-              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
-              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
-              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
-              expenses, completing each projects stage on schedule and implementing a live project intact with both
-              original engineering solutions and the clients initial vision...
+              Sabemos o quão estressante e complexa pode ser uma construção, pensando nisso sintetizamos o processo em
+              quatro etapas: Desenvolvimento do projeto, Assinatura do Contrato, Construção e Entrega das Chaves. Na
+              assinatura do contrato você já sabe o quanto vai desembolsar bem como recebe o cronograma de execução,
+              evitando surpresas indesejáveis. Além disso, elaboramos simulações de financiamentos junto aos órgãos
+              competentes. Se interessou? Entre em contato e saiba mais.
             </p>
           </div>
         </div>
 
         <div className={styles.cardContainer1}>
           <div className={styles.projectContainer}>
-            <h4 className={styles.titleDecorated}>Contrato Global</h4>
+            <h4 className={styles.titleDecorated}>Consultoria</h4>
             <p className={styles.servicesTitle}>
-              WE HAVE A LONG LIST OF PROFESSIONAL CONTRACTORS, WHOM OUR ENGINEERS AND ARCHITECTS ENJOY TO WORK WITH ON A
-              MAJORITY OF OUR PROJECTS!
+              Somos obstinados por resolução de problemas, se você tiver algum relacionado as áreas de engenharia
+              elétrica e/ou civil, conte conosco
             </p>
             <p className={styles.servicesDescription}>
-              Throughout our years in business, we have accumulated a strong expertise both in managing and completing
-              any type of a construction, as well as in choosing the right vendors and sub-contractors... We understand
-              how vital it is to coordinate the project in a timely, cost-efficient way. As of now weve alreeady dealt
-              with numerous mid and large scale constructions, so weve mastered the art of minimizing the extra
-              expenses, completing each projects stage on schedule and implementing a live project intact with both
-              original engineering solutions and the clients initial vision...
+              Situações como multa na fatura por excesso de energia reativa ou uma viga descentralizada podem tirar o
+              sono de qualquer pessoal, na Negro você encontra profissionais altamente capacitados na resolução desses e
+              muitos outros problemas, além disso elaboramos laudos de regularização de instalações elétricas e
+              preventivas contra incêndio.
             </p>
           </div>
-          <Image src={imageServices} alt='Building Image' />
+          <Image className={styles.servicesImages} src={imageConsulting2} alt='Building Image' />
         </div>
       </section>
     </>

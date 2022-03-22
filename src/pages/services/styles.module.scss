@@ -28,11 +28,10 @@
     font-size: 1.15rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    letter-spacing: 0.5rem;
-
-    span {
-      font-weight: bold;
-    }
+    letter-spacing: 0.3rem;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 62.5rem;
   }
 }
 
@@ -42,6 +41,8 @@
   .cardContainer1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    height: 48rem;
 
     padding: 8rem 15rem;
     background: var(--grey-50);
@@ -61,7 +62,6 @@
         width: 70px;
         margin-bottom: 25px;
         background: var(--red-100);
-        // will-change: transform, opacity;
       }
     }
 
@@ -81,6 +81,10 @@
       font-weight: 300;
       font-size: 1.125rem;
     }
+    span {
+      font-weight: bold;
+      color: var(--red-100);
+    }
   }
 
   .cardContainer2 {
@@ -89,6 +93,8 @@
 
     padding: 8rem 15rem;
     gap: 5rem;
+
+    height: 48rem;
 
     .titleDecorated {
       text-transform: uppercase;
@@ -104,7 +110,6 @@
         width: 70px;
         margin-bottom: 25px;
         background: var(--red-100);
-        // will-change: transform, opacity;
       }
     }
 
@@ -124,5 +129,14 @@
       font-weight: 300;
       font-size: 1.125rem;
     }
+
+    span {
+      font-weight: bold;
+      color: var(--red-100);
+    }
   }
+}
+
+.servicesImages {
+  border-radius: 0.5rem;
 }

@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section className={styles.postsContainer}>TESTE LOCAL DOS POSTS</section>
+      <section className={styles.postsContainer}>EM CONSTRUÇÃO</section>
     </>
   );
 }
