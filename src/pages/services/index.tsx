@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import styles from './styles.module.scss';
 
+import Image from 'next/image';
+import imageServices from '../../../public/images/service-1-652x491.jpg';
+
 export default function Services() {
   return (
     <>
@@ -32,11 +35,11 @@ export default function Services() {
               engineering solutions and the client's initial vision...
             </p>
           </div>
-          <img src='/images/service-1-652x491.jpg' alt='Project Image' />
+          <Image src={imageServices} alt='Project Image' />
         </div>
 
         <div className={styles.cardContainer2}>
-          <img src='/images/service-1-652x491.jpg' alt='Instalation image' />
+          <Image src={imageServices} alt='Instalation image' />
           <div className={styles.projectContainer}>
             <h4 className={styles.titleDecorated}>Contrato Global</h4>
             <p className={styles.servicesTitle}>
@@ -70,7 +73,7 @@ export default function Services() {
               engineering solutions and the client's initial vision...
             </p>
           </div>
-          <img src='/images/service-1-652x491.jpg' alt='Building Image' />
+          <Image src={imageServices} alt='Building Image' />
         </div>
       </section>
     </>

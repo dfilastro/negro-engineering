@@ -40,7 +40,9 @@
   // max-height: 80vh;
 
   .cardContainer1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     padding: 8rem 15rem;
     background: var(--grey-50);
     gap: 5rem;
@@ -82,7 +84,9 @@
   }
 
   .cardContainer2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     padding: 8rem 15rem;
     gap: 5rem;
 

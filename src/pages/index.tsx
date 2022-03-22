@@ -14,7 +14,7 @@ export default function Home() {
         <div className={styles.hero}>
           <h1>NEGRO ENGENHARIA</h1>
           <p>
-            CONHEÇA NOSSOS<span> 5 ANOS</span> DE HISTÓRIA
+            CONHEÇA NOSSOS<span> 14 ANOS</span> DE HISTÓRIA
           </p>
           <button>VEJA NOSSOS PROJETOS RECENTES</button>
         </div>
