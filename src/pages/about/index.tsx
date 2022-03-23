@@ -36,7 +36,7 @@ export default function About() {
               <IoIosEye size='4rem' color='var(--yellow-500)' className={styles.valuesImg} />
               <div>
                 <h3>Visão</h3>
-                <p>Entregar 10 projetos no setor privado até o final de 2023.</p>
+                <p>Entregar o 800m2 de área construída no setor privado até o final de 2023.</p>
               </div>
             </div>
 
