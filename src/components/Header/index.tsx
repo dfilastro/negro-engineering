@@ -11,14 +11,14 @@ export function Header() {
           <ActiveLink activeClassName={styles.active} href={'/'}>
             <a>HOME</a>
           </ActiveLink>
-          <ActiveLink activeClassName={styles.active} href={'/about'}>
-            <a>SOBRE NOS</a>
-          </ActiveLink>
           <ActiveLink activeClassName={styles.active} href={'/services'}>
             <a>SERVIÇOS</a>
           </ActiveLink>
           <ActiveLink activeClassName={styles.active} href={'/projects'}>
             <a>PROJETOS</a>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href={'/contact'}>
+            <a>CONTATO</a>
           </ActiveLink>
         </nav>
 

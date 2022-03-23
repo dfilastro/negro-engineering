@@ -60,6 +60,24 @@
   }
 }
 
-.postsContainer {
-  height: 100vh;
+.aboutContainer {
+  // height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 5rem;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .timeLine {
+    // margin-top: 5rem;
+  }
+
+  .valuesContainer {
+    margin-top: 5rem;
+  }
 }

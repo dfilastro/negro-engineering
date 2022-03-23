@@ -5,6 +5,7 @@ import Image from 'next/image';
 import imageConsulting2 from '../../../public/images/consultoria2.jpg';
 import imageElectricalProjects from '../../../public/images/projetos-eletricos3.jpg';
 import imageConstruction from '../../../public/images/contrato-global2.jpg';
+import { PreFooter } from '../../components/PreFooter';
 
 export default function Services() {
   return (
@@ -77,6 +78,8 @@ export default function Services() {
           <Image className={styles.servicesImages} src={imageConsulting2} alt='Building Image' />
         </div>
       </section>
+
+      <PreFooter />
     </>
   );
 }
