@@ -44,6 +44,10 @@
   padding: 5rem 10rem;
   margin: 0 auto;
 
+  @media (max-width: 800px) {
+    display: block;
+  }
+
   .singleProject {
     width: 40rem;
     // height: 40rem;

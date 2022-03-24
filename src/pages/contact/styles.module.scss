@@ -1,42 +1,65 @@
-.container {
-  height: 100vh; //discounts the header`s 5rem, this way the conntent remains centralized
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../../../public/images/parallax-2.jpg);
+.headerBackground {
+  height: 8rem;
+  background: var(--grey-750);
   margin-top: -8rem;
 }
 
-.hero {
-  padding-top: 16rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  align-items: center;
+.mapLocation {
   height: 80vh;
-
-  color: var(--white);
-
-  h1 {
-    font-size: 3.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.3rem;
-  }
-
-  p {
-    font-size: 1.15rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    letter-spacing: 0.5rem;
-  }
+  background: var(--grey-100);
 }
 
-.aboutContainer {
-  height: 80vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 3rem auto 6rem auto;
+.container {
+  height: 90vh;
+  padding: 5.625rem 0;
+
+  .contentContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    h4 {
+      text-transform: uppercase;
+      // margin-top: 2rem;
+      font-size: 1.5625rem;
+      line-height: 1.72;
+      letter-spacing: 0.06em;
+
+      color: var(--grey-750);
+
+      &::before {
+        content: '';
+        position: relative;
+        display: block;
+        height: 3px;
+        width: 70px;
+        margin-bottom: 25px;
+        background: var(--red-100);
+      }
+    }
+
+    .adress {
+      width: 25vw;
+
+      p {
+        margin-top: 2rem;
+        color: var(--grey-450);
+        line-height: 1.5;
+        font-size: 1.125rem;
+        font-weight: 300;
+      }
+
+      span {
+        text-transform: uppercase;
+        color: var(--black);
+        letter-spacing: 0.06em;
+        font-weight: 500;
+      }
+    }
+
+    .form {
+      width: 45vw;
+    }
+  }
 }

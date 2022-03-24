@@ -122,15 +122,30 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 505px) {
   html {
     // font-size: 87.5%;
-    font-size: 30%;
+    font-size: 28%;
   }
 
-  // .servicesImages {
-  //   width: 10%;
-  // }
+  .servicesImages {
+    width: 28%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    // font-size: 87.5%;
+    font-size: 19%;
+  }
+
+  .servicesImages {
+    width: 19%;
+  }
+
+  .projectsContainer {
+    display: block;
+  }
 }
 
 body,
