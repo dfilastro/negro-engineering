@@ -13,8 +13,12 @@ export function Footer() {
           <a href='https://www.facebook.com/negromateriaiseletricos' target='_blank' rel='noreferrer'>
             <FaFacebook size='2rem' color='var(--white)' />
           </a>
-          <FaWhatsapp size='2rem' color='var(--white)' />
-          <FaLinkedin size='2rem' color='var(--white)' />
+          <a href='https://wa.me/5548999340240' target='_blank' rel='noreferrer'>
+            <FaWhatsapp size='2rem' color='var(--white)' />
+          </a>
+          <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer'>
+            <FaLinkedin size='2rem' color='var(--white)' />
+          </a>
         </div>
         <div className={styles.contactSection}>
           <h2>Contatos</h2>

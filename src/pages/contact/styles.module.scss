@@ -61,5 +61,21 @@
     .form {
       width: 45vw;
     }
+
+    .socialMediaSection {
+      display: flex;
+      margin-top: 4rem;
+      gap: 4rem;
+      color: var(--red-100);
+
+      a {
+        width: 1%;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: var(--black);
+      }
+    }
   }
 }
