@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import CustomizedTimeline from '../../components/TimeLine';
 import styles from './styles.module.scss';
 
-import { IoIosRocket, IoIosEye } from 'react-icons/io';
-import { GrDiamond } from 'react-icons/gr';
 import { ContactForm } from '../../components/ContactForm';
+import LocationMap from '../../components/LocationMap';
+import GoogleMaps from '../../components/LocationMap';
 
 export default function Contact() {
   return (
@@ -14,9 +13,7 @@ export default function Contact() {
       </Head>
       <div className={styles.headerBackground}></div>
 
-      <main className={styles.mapLocation}>
-        <p>MAPA COM LOCALIZAÇÃO</p>
-      </main>
+      <GoogleMaps latitude={-28.59891} longitude={-49.32805} />
 
       <section className={styles.container}>
         <div className={styles.contentContainer}>
