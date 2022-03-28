@@ -2,10 +2,10 @@ import styles from './styles.module.scss';
 
 import { ActiveLink } from '../ActiveLink';
 
-export function Header() {
+export function Header({ activation }) {
   return (
-    <header className={styles.headerContainer}>
-      <div className={styles.headerContent}>
+    <header className={`${styles.headerContainer} ${activation && styles.active}`}>
+      <div className={`${styles.headerContent} ${activation && styles.active}`}>
         <img src='/images/logo.svg' alt='ig.news' />
         <nav>
           <ActiveLink activeClassName={styles.active} href={'/'}>

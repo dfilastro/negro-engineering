@@ -1,0 +1,89 @@
+{
+  "id": "project-id",
+  "label": "Project",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "img": {
+        "config": {
+          "label": "Img",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "content": {
+        "config": {
+          "label": "Content",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "img1": {
+        "config": {
+          "label": "Img1",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "img2": {
+        "config": {
+          "label": "Img2",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "img3": {
+        "config": {
+          "label": "Img3",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "img4": {
+        "config": {
+          "label": "Img4",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "img5": {
+        "config": {
+          "label": "Img5",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "location": {
+        "config": {
+          "label": "Location"
+        },
+        "type": "GeoPoint"
+      }
+    }
+  }
+}

@@ -10,8 +10,23 @@ import xanxereImg from '../../../public/images/caixa-xanxere.jpg';
 import playgroundImg from '../../../public/images/playground.jpeg';
 
 import styles from './styles.module.scss';
+import { GetStaticProps } from 'next';
+import { createClient } from '../../services/prismic';
+import Link from 'next/link';
 
-export default function Projects() {
+type Project = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  updated_at: string;
+  image: any;
+};
+
+interface ProjectsProps {
+  projects: Project[];
+}
+
+export default function Projects({ projects }: ProjectsProps) {
   return (
     <>
       <Head>
@@ -25,71 +40,52 @@ export default function Projects() {
       </main>
 
       <section className={styles.projectsContainer}>
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <img src='/images/raul-pompeia.jpeg' alt='' />
-          </div>
-          <h3>Rua Raul Pompéia - Cocal do Sul/SC</h3>
-          <p>
-            Execução de praça em frente ao centro comunitário do bairro Jardim Itália, foram executadas e revestidas
-            todas as calçadas, instalação de lixeiras, bancos e paisagismo. Data de entrega 1/2022.
-          </p>
-        </div>
-
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <Image className={styles.imagem} src={memorialImg} alt='' />
-          </div>
-          <h3>Memorial dos Padres - Cocal do Sul/SC</h3>
-          <p>
-            Construção do memorial dos padres na cidade de Cocal do Sul. Área total construída é de XX m2. Data de
-            entrega 12/2021.
-          </p>
-        </div>
-
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <Image className={styles.imagem} src={portoImg} alt='' />
-          </div>
-          <h3>Agência Caixa - Porto Alegre/RS</h3>
-          <p>
-            Realocação de subestação de energia de 500kVA. Foi construída nova subestação interna e realocado
-            posteriormente. Data de entrega 12/2021.
-          </p>
-        </div>
-
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <Image className={styles.imagem} src={videiraImg} alt='' />
-          </div>
-          <h3>Agência Caixa - Videira/SC</h3>
-          <p>
-            Adaptação de sala comercial, com área total de 600m2, para nova agência da Caixa. Foram executados todas as
-            adequações elétricas e civis necessárias. Data de entrega 9/2021.
-          </p>
-        </div>
-
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <Image className={styles.imagem} src={xanxereImg} alt='' />
-          </div>
-          <h3>Agência Caixa - Xanxerê/SC</h3>
-          <p>
-            Execução de agência nova da Caixa, foram executados todas as adequações elétricas, civis e CFTV/Alarme
-            necessárias. Data de entrega 7/2021.
-          </p>
-        </div>
-
-        <div className={styles.singleProject}>
-          <div className={styles.projectImg}>
-            <Image className={styles.imagem} src={playgroundImg} alt='' />
-          </div>
-          <h3>Playground AMA - Criciúma/SC</h3>
-          <p>Execução de playground infantil. Data de entrega 5/2021.</p>
+        <div className={styles.projectsList}>
+          {projects?.map((project: Project) => (
+            <Link href={`/projects/${project.slug}`}>
+              <a key={project.slug}>
+                <img src={project.image} alt='' />
+                <div>
+                  {/* <time>{project.updated_at}</time> */}
+                  <strong>{project.title}</strong>
+                  <p>{project.excerpt}</p>
+                </div>
+              </a>
+            </Link>
+          ))}
         </div>
       </section>
-
-      <PreFooter />
+      <div className={styles.preFooter}>
+        <PreFooter />
+      </div>
     </>
   );
+}
+
+export async function getServerSideProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const response = await client.getAllByType('project-id', {
+    pageSize: 100,
+  });
+
+  const projects = response?.map((post: any) => {
+    return {
+      slug: post.uid,
+      title: post.data.title[0].text,
+      excerpt: post.data.content.find((content: any) => content.type === 'paragraph')?.text,
+      updated_at: new Date(post.last_publication_date).toLocaleDateString('pt-PT', {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+      }),
+      image: post.data.img.url,
+    };
+  });
+
+  // console.log(projects);
+
+  return {
+    props: { projects },
+  };
 }
