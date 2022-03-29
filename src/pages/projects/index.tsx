@@ -42,8 +42,8 @@ export default function Projects({ projects }: ProjectsProps) {
       <section className={styles.projectsContainer}>
         <div className={styles.projectsList}>
           {projects?.map((project: Project) => (
-            <Link href={`/projects/${project.slug}`}>
-              <a key={project.slug}>
+            <Link key={project.slug} href={`/projects/${project.slug}`}>
+              <a>
                 <img src={project.image} alt='' />
                 <div>
                   {/* <time>{project.updated_at}</time> */}

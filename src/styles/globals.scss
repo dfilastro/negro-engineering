@@ -148,6 +148,21 @@
   }
 }
 
+@media (max-width: 186px) {
+  html {
+    // font-size: 87.5%;
+    font-size: 10%;
+  }
+
+  .servicesImages {
+    width: 10%;
+  }
+
+  .projectsContainer {
+    display: block;
+  }
+}
+
 body,
 input,
 textarea,
