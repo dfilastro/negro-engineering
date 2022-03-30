@@ -1,16 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { PreFooter } from '../../components/PreFooter';
 
-import raulImg from '../../../public/images/raul-pompeia.jpeg';
-import memorialImg from '../../../public/images/memorial-padres.jpeg';
-import portoImg from '../../../public/images/caixa-portoalegre.jpeg';
-import videiraImg from '../../../public/images/caixa-videira.jpeg';
-import xanxereImg from '../../../public/images/caixa-xanxere.jpg';
-import playgroundImg from '../../../public/images/playground.jpeg';
-
 import styles from './styles.module.scss';
-import { GetStaticProps } from 'next';
 import { createClient } from '../../services/prismic';
 import Link from 'next/link';
 
@@ -82,8 +73,6 @@ export async function getServerSideProps({ previewData }) {
       image: post.data.img.url,
     };
   });
-
-  // console.log(projects);
 
   return {
     props: { projects },

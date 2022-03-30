@@ -56,6 +56,7 @@ export default function Post({ post }: PostProps) {
           <img src={post.image2} alt='foto do projeto' />
           <img src={post.image3} alt='foto do projeto' />
           <img src={post.image4} alt='foto do projeto' />
+          <img src={post.image5} alt='foto do projeto' />
 
           <div className={styles.googleMap}>
             <GoogleMaps latitude={post.location.latitude} longitude={post.location.longitude} />
@@ -87,6 +88,7 @@ export const getServerSideProps = async ({ previewData, params, req }: ServerSid
     image2: response.data.img2.url || '',
     image3: response.data.img3.url || '',
     image4: response.data.img4.url || '',
+    image5: response.data.img5.url || '',
   };
 
   return {
