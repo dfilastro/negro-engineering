@@ -6,3 +6,5 @@ Also, I've developed some cool features like Google Map Integration, to show whe
 Last but not less important, I've deployed using Vercel.
 
 Check this out on www.negromee.com
+
+NextJS | JavaScript | TypeScript | Vercel | Prismic
