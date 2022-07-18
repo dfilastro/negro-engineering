@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 import { ContactForm } from '../../components/ContactForm';
 import GoogleMaps from '../../components/LocationMap';
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function Contact() {
   return (
@@ -29,10 +29,18 @@ export default function Contact() {
               <span>Atendimento:</span> Segunda a Sexta: 9h as 17h
             </p>
             <div className={styles.socialMediaSection}>
-              <a href='https://www.instagram.com/negromateriaiseletricos/' target='_blank' rel='noreferrer'>
+              <a
+                href='https://www.instagram.com/negromateriaiseletricos/'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <FaInstagram size='2rem' />
               </a>
-              <a href='https://www.facebook.com/negromateriaiseletricos' target='_blank' rel='noreferrer'>
+              <a
+                href='https://www.facebook.com/negromateriaiseletricos'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <FaFacebook size='2rem' />
               </a>
               <a href='https://wa.me/5548999340240' target='_blank' rel='noreferrer'>

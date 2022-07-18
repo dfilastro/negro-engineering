@@ -2,8 +2,8 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
 interface GoogleMapsProps {
-  latitude: string;
-  longitude: string;
+  latitude: number;
+  longitude: number;
 }
 
 const GoogleMaps = ({ latitude, longitude }: GoogleMapsProps) => {
