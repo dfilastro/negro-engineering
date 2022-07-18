@@ -1,7 +1,12 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const GoogleMaps = ({ latitude, longitude }) => {
+interface GoogleMapsProps {
+  latitude: string;
+  longitude: string;
+}
+
+const GoogleMaps = ({ latitude, longitude }: GoogleMapsProps) => {
   const renderMarkers = (map, maps) => {
     let marker = new maps.Marker({
       position: { lat: latitude, lng: longitude },

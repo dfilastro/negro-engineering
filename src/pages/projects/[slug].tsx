@@ -4,7 +4,6 @@ import { createClient } from '../../services/prismic';
 import { RichText } from 'prismic-dom';
 
 import styles from './project.module.scss';
-import { PrismicRichText } from '@prismicio/react';
 import GoogleMaps from '../../components/LocationMap';
 
 type Post = {
